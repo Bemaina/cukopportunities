@@ -1,0 +1,131 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #006838 0%, #28a745 100%);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 25px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.deadline {
+  background: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  margin-bottom: 25px;
+}
+
+.primary-btn {
+  background: #ffc107;
+  color: #000;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #ff9800;
+  transform: scale(1.05);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  width: 40%;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.prank {
+  display: none;
+  margin-top: 20px;
+  max-width: 80%;
+  border-radius: 15px;
+  animation: spinReveal 1.2s ease-in-out forwards;
+}
+
+@keyframes spinReveal {
+  from {
+    opacity: 0;
+    transform: rotateY(0deg) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(720deg) scale(1);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding: 15px;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .stat {
+    width: 80%;
+  }
+  .hero h1 {
+    font-size: 1.8em;
+  }
+}
